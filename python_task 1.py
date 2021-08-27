@@ -5,10 +5,10 @@ if ans.isdigit():
     over = 6*ans
 else:
     print('enter a valid value, again start the game ')
-#make the competure to guess a value and print it with screen with target greater than one.and make variable and give them value .
+#make the computer to guess a value and print it with screen with target greater than one.and make variable and give them value .
 
 comptarget = random.randint(1, over)
-print(' competure scored', comptarget, 'your target is ', comptarget + 1)
+print(' computer scored', comptarget, 'your target is ', comptarget + 1)
 ball = 1
 batover = 1
 csguess = random.randint(0, 6)
@@ -32,7 +32,7 @@ while ball != 7 and batover != ans + 1:
             
             
             if run == csguess  :
-                print('sorry!! you lose... competure guessed your number')
+                print('sorry!! you lose... computer guessed your number')
                 break
             elif comptarget < point :
                 j = point - cspoint
@@ -56,4 +56,4 @@ while ball != 7 and batover != ans + 1:
         print('enter a valid digit')
 # print the score
 print('your total run is:  ', point)
-print('competure total run is:  ', cspoint)
+print('computer total run is:  ', cspoint)
